@@ -85,6 +85,7 @@ def generate_word(language = 'en'):
     else:
         print("NOTE: WE DON'T SUPPORT YOUR LANGUAGE THE WOR WILL BE IN ENGLISH")
         word = random.choice(word_list)
+    word = word.lower()
     return word
 
 #generating the word
