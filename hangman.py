@@ -17,7 +17,7 @@ running = True
 zero = 0
 choices = []
 #copy the en_words.txt's path
-file = open('en_words.txt', 'r')
+file = open('/home/pi/Desktop/python/en_words.txt', 'r')
 word_list = []
 #hangmanpics source/"https://gist.github.com/chrishorton/8510732aa9a80a03c829b09f12e20d9c"
 HANGMANPICS = ['''
@@ -90,18 +90,18 @@ def generate_word(language = 'en'):
 
 #generating the word
 content = generate_word()
+a = -1
+for string in content:
+    a += 1
 
-#making the board
-for string in str(content):
-    if string == ' ':
-        game_board.append(' / ')
-    else: 
-        game_board.append('_ ')
+#drawing the board
+b = 0
+while b < a:
+    game_board.append('_ ')
+    b += 1
 
 #game class
 class game():
-
-    
 
     #drawing the game
     def draw_game():
