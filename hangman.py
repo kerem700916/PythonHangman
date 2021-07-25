@@ -113,12 +113,12 @@ class game():
     def move():
         zero = 0
         global wrong_choices
-        choice = input('which letter? ')
-        if choice == content:
+        if game_board.count('_ ') == 0:
             os.system('clear')
             print('the word was ' + colored(content, 'blue'))
             print(colored('YOU WON!', 'green'))
             sys.exit(0)
+        choice = input('which letter? ')
         choice = choice.lower()
         if choice in choices:
             print(colored('you have been used this letter!', 'red'))
