@@ -17,7 +17,7 @@ running = True
 zero = 0
 choices = []
 #copy the en_words.txt's path
-file = open('/home/pi/Desktop/python/en_words.txt', 'r')
+file = open('en_words.txt', 'r')
 word_list = []
 #hangmanpics source/"https://gist.github.com/chrishorton/8510732aa9a80a03c829b09f12e20d9c"
 HANGMANPICS = ['''
