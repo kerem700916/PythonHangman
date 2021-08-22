@@ -101,7 +101,7 @@ while b < a:
     b += 1
 
 #game class
-class game():
+class game:
 
     #drawing the game
     def draw_game():
